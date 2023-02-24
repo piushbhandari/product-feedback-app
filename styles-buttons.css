@@ -8,6 +8,7 @@
   line-height: 2rem;
   border-radius: 10px;
   text-decoration: none;
+  text-align: center;
   text-transform: capitalize;
 }
 .button.button1 {
@@ -80,4 +81,18 @@
 .go-back:focus svg {
   text-decoration: underline;
   transform: translateX(-10px);
+}
+.tag-button {
+  padding: 0.5rem 1.6rem;
+  background: #f2f4ff;
+  border-radius: 10px;
+  color: #4661e6;
+}
+.tag-button:hover,
+.tag-button:focus {
+  background: #cfd7ff;
+}
+.tag-button.active {
+  background: #4661e6;
+  color: white;
 }
