@@ -1,0 +1,31 @@
+@media all and (max-width: 950px) {
+  .container {
+    padding: 0 4rem;
+  }
+  .homepage-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .sidebar {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.57rem;
+  }
+  .sidebar > * {
+    flex: 1;
+  }
+  .main {
+    width: 100%;
+  }
+}
+@media all and (max-width: 690px) {
+  .main-menu__suggestion-box {
+    display: none;
+  }
+}
+@media all and (max-width: 375px) {
+  .container {
+    padding: 0 2.44rem;
+  }
+}
