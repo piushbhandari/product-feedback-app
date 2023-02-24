@@ -1,0 +1,83 @@
+.button {
+  display: block;
+  padding: 1.3rem 1rem 1.1rem 1rem;
+  min-width: 15.8rem;
+  color: #f2f4fe;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.button.button1 {
+  background: #ad1fea;
+}
+.button.button1:hover,
+.button.button1:focus {
+  background: #c75af6;
+}
+.button.button2 {
+  background: #4661e6;
+}
+.button.button2:hover,
+.button.button2:focus {
+  background: #7c91f9;
+}
+
+.button.button3 {
+  background: #3a4374;
+}
+.button.button3:hover,
+.button.button3:focus {
+  background: #656ea3;
+}
+.button.button4 {
+  background: #373f68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.567rem;
+}
+.button.button4 svg {
+  height: 1rem;
+  width: 0.7rem;
+  fill: white;
+}
+.button.button4:hover,
+.button.button4:focus {
+  text-decoration: underline;
+}
+.button.button4:hover svg,
+.button.button4:focus svg {
+  transform: translateX(-10px);
+}
+.go-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.567rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #647196;
+}
+.go-back:hover,
+.go-back:focus {
+  text-decoration: underline;
+}
+.go-back svg {
+  height: 1rem;
+  width: 0.7rem;
+  fill: #4661e6;
+}
+.go-back:hover svg,
+.go-back:focus svg {
+  text-decoration: underline;
+  transform: translateX(-10px);
+}

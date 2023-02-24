@@ -1,0 +1,18 @@
+body {
+  color: #3a4374;
+ 
+}
+
+.container {
+  width: 100%;
+  max-width: 115.8rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 77.8rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
