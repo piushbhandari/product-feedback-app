@@ -16,131 +16,167 @@
     <title>O_o</title>
   </head>
   <body>
-    <div class="container homepage-container">
-      <div class="sidebar">
-        <div class="sidebar__one">
-          <div class="sidebar__one-textbox">
-            <h2>Frontend Mentor</h2>
-            <p class="body2">Feedback Board</p>
-          </div>
-        </div>
-        <div class="sidebar__two">
-          <!-- button tags -->
-          <ul class="tag-listing">
-            <!-- tag listing item -->
-            <li class="tag-listing__item">
-              <button class="body3 tag-button active">All</button>
-            </li>
-            <li class="tag-listing__item">
-              <button class="body3 tag-button">UI</button>
-            </li>
-            <li class="tag-listing__item">
-              <button class="body3 tag-button">UX</button>
-            </li>
-            <li class="tag-listing__item">
-              <button class="body3 tag-button">Enhancement</button>
-            </li>
-            <li class="tag-listing__item">
-              <button class="body3 tag-button">Bug</button>
-            </li>
-            <li class="tag-listing__item">
-              <button class="body3 tag-button">Feature</button>
-            </li>
-
-            <!-- tag listing item -->
-          </ul>
-
-          <!-- button tags -->
-        </div>
-        <div class="sidebar__three">
-          <div class="sidebar__three-top">
-            <h3>Roadmap</h3>
-            <a class="body3" href="#">View</a>
-          </div>
-
-          <!-- roadmap listings -->
-
-          <ul class="roadmap-listing1">
-            <li class="roadmap-listing1__item orange">
-              <p class="roadmap-listing1__status">Planned</p>
-              <p class="roadmap-listing1__count">2</p>
-            </li>
-            <li class="roadmap-listing1__item purple">
-              <p class="roadmap-listing1__status">in-progress</p>
-              <p class="roadmap-listing1__count">3</p>
-            </li>
-            <li class="roadmap-listing1__item skyblue">
-              <p class="roadmap-listing1__status">live</p>
-              <p class="roadmap-listing1__count">1</p>
-            </li>
-          </ul>
-
-          <!-- roadmap listings -->
-        </div>
-      </div>
-
-      <main class="main">
-        <div class="main-menu">
-          <div class="main-menu__suggestion-box">
-            <svg aria-hidden="true" focusable="false">
-              <use xlink:href="./svg-legend.svg#icon-bulb"></use>
-            </svg>
-            <h3><span>6</span> Suggestions</h3>
-          </div>
-          <div class="main-menu__sortby-box">
-            <p>Sort by:</p>
-            <button class="sortBtn">
-              <span>Most Upvotes</span>
-              <svg aria-hidden="true" focusable="false">
-                <use xlink:href="./svg-legend.svg#icon-down"></use>
-              </svg>
-            </button>
-          </div>
-          <a href="#" class="button button1">
-            <span>+ Add Feedback</span>
-          </a>
-        </div>
-
-        <ul class="feedback-listing">
-          <li class="feedback-listing__item">
-            <button class="upvoteBtn">
-              <svg aria-hidden="true" focusable="false">
-                <use xlink:href="./svg-legend.svg#icon-up"></use>
-              </svg>
-
-              <span class="upvoteCount">112</span>
-              <span class="visuallyhidden"> upvote post </span>
-            </button>
-
-            <div class="feedback-listing__content">
-              <a href="#" class="feedback-listing__link">
-                <h3 class="feedback-listing__title">
-                  Add tags for solutions
-                </h3></a
-              >
-              <p class="feedback-listing__desc">
-                Easier to search for solutions based on a specific stack.
-              </p>
-
-              <button class="body3 tag-button">Enhancement</button>
+    <div class="page-container">
+      <div class="container homepage-container">
+        <div class="sidebar">
+          <div class="sidebar__one">
+            <div class="sidebar__one-textbox">
+              <h2>Frontend Mentor</h2>
+              <p class="body2">Feedback Board</p>
             </div>
 
-            <a
-              href="#"
-              aria-label="view comments"
-              class="feedback-listing__comments"
+            <button
+              type="button"
+              aria-label="toggle menu"
+              class="menuBtn"
+              data-expander
+              data-expander-toggle="menu-toggle"
             >
-              <svg aria-hidden="true" focusable="false">
-                <use xlink:href="./svg-legend.svg#icon-msg"></use>
+              <svg
+                class="menuBtn__hambubger"
+                width="20"
+                height="17"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="#FFF" fill-rule="evenodd">
+                  <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
+                </g>
               </svg>
+              <svg
+                class="menuBtn__close"
+                width="18"
+                height="17"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="sidebar-overlay" id="menu-toggle">
+            <div class="sidebar__containment">
+              <div class="sidebar__two">
+                <!-- button tags -->
+                <ul class="tag-listing">
+                  <!-- tag listing item -->
+                  <li class="tag-listing__item">
+                    <button class="body3 tag-button active">All</button>
+                  </li>
+                  <li class="tag-listing__item">
+                    <button class="body3 tag-button">UI</button>
+                  </li>
+                  <li class="tag-listing__item">
+                    <button class="body3 tag-button">UX</button>
+                  </li>
+                  <li class="tag-listing__item">
+                    <button class="body3 tag-button">Enhancement</button>
+                  </li>
+                  <li class="tag-listing__item">
+                    <button class="body3 tag-button">Bug</button>
+                  </li>
+                  <li class="tag-listing__item">
+                    <button class="body3 tag-button">Feature</button>
+                  </li>
 
-              <p class="body1 commentsCounter">2</p>
+                  <!-- tag listing item -->
+                </ul>
+
+                <!-- button tags -->
+              </div>
+              <div class="sidebar__three">
+                <div class="sidebar__three-top">
+                  <h3>Roadmap</h3>
+                  <a class="body3" href="#">View</a>
+                </div>
+
+                <!-- roadmap listings -->
+
+                <ul class="roadmap-listing1">
+                  <li class="roadmap-listing1__item orange">
+                    <p class="roadmap-listing1__status">Planned</p>
+                    <p class="roadmap-listing1__count">2</p>
+                  </li>
+                  <li class="roadmap-listing1__item purple">
+                    <p class="roadmap-listing1__status">in-progress</p>
+                    <p class="roadmap-listing1__count">3</p>
+                  </li>
+                  <li class="roadmap-listing1__item skyblue">
+                    <p class="roadmap-listing1__status">live</p>
+                    <p class="roadmap-listing1__count">1</p>
+                  </li>
+                </ul>
+
+                <!-- roadmap listings -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main class="main">
+          <div class="main-menu">
+            <div class="main-menu__suggestion-box">
+              <svg aria-hidden="true" focusable="false">
+                <use xlink:href="./svg-legend.svg#icon-bulb"></use>
+              </svg>
+              <h3><span>6</span> Suggestions</h3>
+            </div>
+            <div class="main-menu__sortby-box">
+              <p>Sort by:</p>
+              <button class="sortBtn">
+                <span>Most Upvotes</span>
+                <svg aria-hidden="true" focusable="false">
+                  <use xlink:href="./svg-legend.svg#icon-down"></use>
+                </svg>
+              </button>
+            </div>
+            <a href="#" class="button button1">
+              <span>+ Add Feedback</span>
             </a>
-          </li>
+          </div>
+          <ul class="feedback-listing">
+            <li class="feedback-listing__item">
+              <button class="upvoteBtn">
+                <svg aria-hidden="true" focusable="false">
+                  <use xlink:href="./svg-legend.svg#icon-up"></use>
+                </svg>
 
-          
-        </ul>
-      </main>
+                <span class="upvoteCount">112</span>
+                <span class="visuallyhidden"> upvote post </span>
+              </button>
+
+              <div class="feedback-listing__content">
+                <a href="#" class="feedback-listing__link">
+                  <h3 class="feedback-listing__title">
+                    Add tags for solutions
+                  </h3></a
+                >
+                <p class="feedback-listing__desc">
+                  Easier to search for solutions based on a specific stack.
+                </p>
+
+                <button class="body3 tag-button">Enhancement</button>
+              </div>
+
+              <a
+                href="#"
+                aria-label="view comments"
+                class="feedback-listing__comments"
+              >
+                <svg aria-hidden="true" focusable="false">
+                  <use xlink:href="./svg-legend.svg#icon-msg"></use>
+                </svg>
+
+                <p class="body1 commentsCounter">2</p>
+              </a>
+            </li>
+          </ul>
+        </main>
+      </div>
     </div>
+
+    <script src="script-data-expanders.js"></script>
   </body>
 </html>

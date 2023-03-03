@@ -1,16 +1,19 @@
+.page-container {
+  padding: 9.4rem 0 12.9rem 0;
+}
+
 .homepage-container {
-  border: 1px solid pink;
   display: flex;
   gap: 3rem;
   align-items: flex-start;
 }
 .sidebar {
-  border: 1px solid black;
   width: 100%;
   max-width: 25.5rem;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  position: relative;
 }
 .sidebar__one {
   /* min-height: 13.7rem ; */
@@ -23,12 +26,28 @@
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menuBtn {
+  display: none;
+  flex-shrink: 0;
+}
+.sidebar__one svg:hover,
+.sidebar__one svg:focus {
+  transform: scale(1.32);
 }
 .sidebar__one-textbox {
   color: white;
 }
 .sidebar__one-textbox .body2 {
   opacity: 0.75;
+}
+.sidebar__containment {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 .sidebar__two {
   background: white;
@@ -99,7 +118,6 @@
   font-weight: 700;
 }
 .main {
-  border: 1px solid red;
   flex: 1;
 }
 .main-menu {
@@ -110,6 +128,7 @@
   padding: 1.4rem 1.6rem 1.4rem 2.4rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3.8rem;
 }
 .main-menu__suggestion-box {
