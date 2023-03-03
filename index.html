@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles-base.css" />
 
     <link rel="stylesheet" href="./styles-mediaQ.css" />
- 
+
     <title>O_o</title>
   </head>
   <body>
@@ -102,12 +102,41 @@
         </div>
 
         <ul class="feedback-listing">
-          <li class="feedback-listing__item"></li>
-          <li class="feedback-listing__item"></li>
-          <li class="feedback-listing__item"></li>
-          <li class="feedback-listing__item"></li>
-          <li class="feedback-listing__item"></li>
-          <li class="feedback-listing__item"></li>
+          <li class="feedback-listing__item">
+            <button class="upvoteBtn">
+              <svg aria-hidden="true" focusable="false">
+                <use xlink:href="./svg-legend.svg#icon-up"></use>
+              </svg>
+
+              <span class="upvoteCount">112</span>
+              <span class="visuallyhidden"> upvote post </span>
+            </button>
+
+            <div class="feedback-listing__content">
+              <a href="#" class="feedback-listing__link">
+                <h3 class="feedback-listing__title">
+                  Add tags for solutions
+                </h3></a
+              >
+              <p class="feedback-listing__desc">
+                Easier to search for solutions based on a specific stack.
+              </p>
+
+              <button class="body3 tag-button">Enhancement</button>
+            </div>
+
+            <a
+              href="#"
+              aria-label="view comments"
+              class="feedback-listing__comments"
+            >
+              <svg aria-hidden="true" focusable="false">
+                <use xlink:href="./svg-legend.svg#icon-msg"></use>
+              </svg>
+
+              <p class="body1 commentsCounter">2</p>
+            </a>
+          </li>
         </ul>
       </main>
     </div>
