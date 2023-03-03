@@ -24,8 +24,26 @@
     display: none;
   }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 500px) {
   .container {
     padding: 0 2.44rem;
+  }
+  .feedback-listing__item {
+    grid-template-columns: auto auto;
+    gap: 1.6rem;
+    padding: 2.4rem;
+  }
+  .feedback-listing__content {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .upvoteBtn {
+    flex-direction: row;
+    padding: 0.6rem 1.3rem 0.7rem 1.6rem;
+    width: fit-content;
+  }
+  .feedback-listing__comments {
+    justify-content: flex-end;
   }
 }

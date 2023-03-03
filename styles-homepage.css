@@ -91,6 +91,9 @@
 .roadmap-listing1__item.skyblue::before {
   background: #62bcfa;
 }
+.roadmap-listing1__item p {
+  margin: 0;
+}
 
 .roadmap-listing1__count {
   font-weight: 700;
