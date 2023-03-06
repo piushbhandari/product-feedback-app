@@ -16,3 +16,6 @@ body {
   margin: 0 auto;
   padding: 0 2.4rem;
 }
+[data-expander-target]{
+  display: none;
+}

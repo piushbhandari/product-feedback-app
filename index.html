@@ -125,58 +125,39 @@
             </div>
             <div class="main-menu__sortby-box">
               <p>Sort by:</p>
-              <button class="sortBtn">
+              <button
+                data-expander
+                data-expander-toggle="sortby-drop"
+                class="sortBtn"
+              >
                 <span>Most Upvotes</span>
                 <svg aria-hidden="true" focusable="false">
                   <use xlink:href="./svg-legend.svg#icon-down"></use>
                 </svg>
               </button>
+
+              <div
+                data-expander-target
+                id="sortby-drop"
+                class="filter-listing1-container"
+              >
+                <button class="sort-filter-btn body1">Most Upvotes</button>
+                <button class="sort-filter-btn body1">Least Upvotes</button>
+                <button class="sort-filter-btn body1">Most Comments</button>
+                <button class="sort-filter-btn body1">Least Comments</button>
+              </div>
             </div>
             <a href="#" class="button button1">
               <span>+ Add Feedback</span>
             </a>
           </div>
           <ul class="feedback-listing">
-            <li class="feedback-listing__item">
-              <button class="upvoteBtn">
-                <svg aria-hidden="true" focusable="false">
-                  <use xlink:href="./svg-legend.svg#icon-up"></use>
-                </svg>
-
-                <span class="upvoteCount">112</span>
-                <span class="visuallyhidden"> upvote post </span>
-              </button>
-
-              <div class="feedback-listing__content">
-                <a href="#" class="feedback-listing__link">
-                  <h3 class="feedback-listing__title">
-                    Add tags for solutions
-                  </h3></a
-                >
-                <p class="feedback-listing__desc">
-                  Easier to search for solutions based on a specific stack.
-                </p>
-
-                <button class="body3 tag-button">Enhancement</button>
-              </div>
-
-              <a
-                href="#"
-                aria-label="view comments"
-                class="feedback-listing__comments"
-              >
-                <svg aria-hidden="true" focusable="false">
-                  <use xlink:href="./svg-legend.svg#icon-msg"></use>
-                </svg>
-
-                <p class="body1 commentsCounter">2</p>
-              </a>
-            </li>
           </ul>
         </main>
       </div>
     </div>
 
-    <script src="script-data-expanders.js"></script>
+    <script type="module" src="script-data-expanders.js"></script>
+    <script type="module" src="script-load-json.js"></script>
   </body>
 </html>

@@ -87,6 +87,7 @@
   background: #f2f4ff;
   border-radius: 10px;
   color: #4661e6;
+  text-transform: capitalize;
 }
 .tag-button:hover,
 .tag-button:focus {
