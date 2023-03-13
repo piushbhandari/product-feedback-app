@@ -1,0 +1,37 @@
+.page-list-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 323;
+}
+.page-list-container.hide {
+  display: none;
+}
+.page-list-btn {
+  /* padding: 1rem 3.5rem; */
+  margin-bottom: 1.5rem;
+  
+}
+ 
+.page-listing {
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border: 2px solid skyblue;
+  width: 100%;
+  max-width: 40rem;
+}
+.page-listing.active {
+  display: flex;
+}
+
+.page-listing__link {
+  font-size: 1.6rem;
+  color: black;
+}
+.hidePageLister{
+    margin-top: 20px;
+ 
+}

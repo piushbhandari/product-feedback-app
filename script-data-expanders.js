@@ -16,3 +16,9 @@ dataTogglers.forEach((toggle) => {
     }
   });
 });
+
+const hidePageListerBtn = document.querySelector(".hidePageLister");
+
+hidePageListerBtn.addEventListener("click", (e) => {
+  document.querySelector(".page-list-container").classList.add("hide");
+});

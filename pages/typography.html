@@ -5,14 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="together we ride!" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./styles-typography.css" />
-    <link rel="stylesheet" href="./styles-buttons.css" />
-    <link rel="stylesheet" href="./styles-mediaQ.css" />
-    <link rel="stylesheet" href="./styles-base.css" />
+    <link rel="stylesheet" href="./../styles.css" />
+    <link rel="stylesheet" href="./../styles-typography.css" />
+    <link rel="stylesheet" href="./../styles-buttons.css" />
+    <link rel="stylesheet" href="./../styles-mediaQ.css" />
+    <link rel="stylesheet" href="./../styles-base.css" />
+    <link rel="stylesheet" href="./../styles-pages.css" />
+    <link rel="stylesheet" href="./../styles-mediaQ.css" />
+    
     <title>O_o</title>
   </head>
   <body>
+    <div class="page-list-container">
+      <button
+        data-expander
+        data-expander-toggle="page-list"
+        class="button button1 page-list-btn"
+      >
+        Pages
+      </button>
+      <ul data-expander-target id="page-list" class="page-listing">
+        <li class="page-listing__item">
+          <a class="page-listing__link" target="_blank" href="./../index.html">00. Home</a>
+        </li>
+        <li class="page-listing__item">
+          <a
+            class="page-listing__link"
+            target="_blank"
+            href="./typography.html"
+            >01. Typography</a
+          >
+        </li>
+        <li class="page-listing__item">
+          <a
+            class="page-listing__link"
+            target="_blank"
+            href="./roadmap.html"
+            >02. Roadmap</a
+          >
+        </li>
+
+        <li class="page-listing__item">
+          <button class="button button2 hidePageLister">Hide</button>
+        </li>
+      </ul>
+    </div>
+
+
     <div class="container">
       <h1>heading...one...?!</h1>
 
@@ -85,6 +124,22 @@
         Ipsum blanditiis odit vitae repellat vero magni voluptas amet
         voluptatibus libero.
       </p>
+      <ol>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+      </ol>
+      <ul>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+      </ul>
 
       <h2>buttons</h2>
 
@@ -98,18 +153,15 @@
 
       <br />
       <button class="button button4">
-        <svg aria-hidden="true" focusable="false">
-          <use xlink:href="./svg-legend.svg#icon-left"></use>
-        </svg>
+        <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L2 5l4-4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
         <span>button 3</span>
       </button>
 
       <button class="go-back">
-        <svg aria-hidden="true" focusable="false">
-          <use xlink:href="./svg-legend.svg#icon-left"></use>
-        </svg>
+        <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L2 5l4-4" stroke="#4661E6" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
         <span>Go back</span>
       </button>
     </div>
+    <script type="module" src="./../script-data-expanders.js"></script>
   </body>
 </html>

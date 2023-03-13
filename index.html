@@ -10,12 +10,47 @@
     <link rel="stylesheet" href="./styles-buttons.css" />
     <link rel="stylesheet" href="./styles-homepage.css" />
     <link rel="stylesheet" href="./styles-base.css" />
-
+    <link rel="stylesheet" href="./styles-pages.css" />
     <link rel="stylesheet" href="./styles-mediaQ.css" />
 
     <title>O_o</title>
   </head>
   <body>
+    <div class="page-list-container">
+      <button
+        data-expander
+        data-expander-toggle="page-list"
+        class="button button1 page-list-btn"
+      >
+        Pages
+      </button>
+      <ul data-expander-target id="page-list" class="page-listing">
+        <li class="page-listing__item">
+          <a class="page-listing__link" target="_blank" href="./">00. Home</a>
+        </li>
+        <li class="page-listing__item">
+          <a
+            class="page-listing__link"
+            target="_blank"
+            href="./pages/typography.html"
+            >01. Typography</a
+          >
+        </li>
+        <li class="page-listing__item">
+          <a
+            class="page-listing__link"
+            target="_blank"
+            href="./pages/typography.html"
+            >02. Roadmap</a
+          >
+        </li>
+
+        <li class="page-listing__item">
+          <button class="button button2 hidePageLister">Hide</button>
+        </li>
+      </ul>
+    </div>
+
     <div class="page-container">
       <div class="container homepage-container">
         <div class="sidebar">
@@ -89,7 +124,7 @@
               <div class="sidebar__three">
                 <div class="sidebar__three-top">
                   <h3>Roadmap</h3>
-                  <a class="body3" href="#">View</a>
+                  <a class="body3" href="./pages/roadmap.html">View</a>
                 </div>
 
                 <!-- roadmap listings -->
@@ -151,8 +186,7 @@
               <span>+ Add Feedback</span>
             </a>
           </div>
-          <ul class="feedback-listing">
-          </ul>
+          <ul class="feedback-listing"></ul>
         </main>
       </div>
     </div>

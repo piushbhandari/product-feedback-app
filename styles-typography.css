@@ -27,7 +27,7 @@ h4 {
   letter-spacing: -0.2px;
 }
 
-p {
+p , ol , ul{
   margin-bottom: 1rem;  
   font-size: 1.6rem;
   line-height: 2.3rem;

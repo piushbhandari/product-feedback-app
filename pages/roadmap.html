@@ -12,9 +12,48 @@
     <link rel="stylesheet" href="./../styles-base.css" />
     <link rel="stylesheet" href="./../styles-mediaQ.css" />
     <link rel="stylesheet" href="./../styles-roadmap.css" />
+    <link rel="stylesheet" href="./../styles-pages.css" />
+    <link rel="stylesheet" href="./../styles-mediaQ.css" />
     <title>-.-</title>
   </head>
   <body>
-    <div class="roadmap-container"></div>
+    <div class="page-list-container">
+      <button
+        data-expander
+        data-expander-toggle="page-list"
+        class="button button1 page-list-btn"
+      >
+        Pages
+      </button>
+      <ul data-expander-target id="page-list" class="page-listing">
+        <li class="page-listing__item">
+          <a class="page-listing__link" target="_blank" href="./../index.html">00. Home</a>
+        </li>
+        <li class="page-listing__item">
+          <a
+            class="page-listing__link"
+            target="_blank"
+            href="./typography.html"
+            >01. Typography</a
+          >
+        </li>
+        <li class="page-listing__item">
+          <a
+            class="page-listing__link"
+            target="_blank"
+            href="./roadmap.html"
+            >02. Roadmap</a
+          >
+        </li>
+
+        <li class="page-listing__item">
+          <button class="button button2 hidePageLister">Hide</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="roadmap-container">
+      <script type="module" src="./../script-data-expanders.js"></script>
+    </div>
   </body>
 </html>
