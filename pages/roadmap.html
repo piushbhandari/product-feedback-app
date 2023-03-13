@@ -73,6 +73,420 @@
         </div>
       </header>
 
+      <main class="roadmap-main">
+        <div class="roadmap-tab-btns">
+          <button
+            data-expander
+            data-expander-toggle="planned"
+            class="roadmap-tab-btn body3 planned active"
+          >
+            Planned (2)
+          </button>
+          <button
+            data-expander
+            data-expander-toggle="in-progress"
+            class="roadmap-tab-btn body3 in-progress"
+          >
+            In-Progress (3)
+          </button>
+          <button
+            data-expander
+            data-expander-toggle="live"
+            class="roadmap-tab-btn body3 live"
+          >
+            Live (1)
+          </button>
+        </div>
+        <div class="container roadmap-main__container">
+          <div
+            class="roadmap-list-container planned active"
+            id="planned"
+            data-expander-target
+          >
+            <div class="roadmap-list-container__top">
+              <h2>Planned(2)</h2>
+              <p>Ideas prioritized for research</p>
+            </div>
+            <ul class="roadmap-listing">
+              <li class="roadmap-listing__item">
+                <div class="roadmap-listing__container">
+                  <p class="roadmap-listing__category body1">Planned</p>
+                  <a class="roadmap-listing__link" href="#">
+                    <h3 class="roadmap-listing__title">
+                      More comprehensive reports
+                    </h3></a
+                  >
+
+                  <div class="roadmap-listing__desc">
+                    <p>
+                      It would be great to see a more detailed breakdown of
+                      solutions.
+                    </p>
+                  </div>
+                  <button class="body3 tag-button">Feature</button>
+                  <div class="roadmap-listing__bottom">
+                    <button class="upvoteBtn">
+                      <svg
+                        width="10"
+                        height="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6l4-4 4 4"
+                          stroke="#4661E6"
+                          stroke-width="2"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span class="upvoteCount">123</span>
+                      <span class="visuallyhidden"> upvote post </span>
+                    </button>
+                    <a
+                      href="#"
+                      aria-label="view comments"
+                      class="feedback-listing__comments"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="18"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+                          fill="#CDD2EE"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+
+                      <p class="body1 commentsCounter">2</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="roadmap-listing__item">
+                <div class="roadmap-listing__container">
+                  <p class="roadmap-listing__category body1">Planned</p>
+                  <a href="#" class="roadmap-listing__link">
+                    <h3 class="roadmap-listing__title">Learning paths</h3></a
+                  >
+
+                  <div class="roadmap-listing__desc">
+                    <p>
+                      Sequenced projects for different goals to help people
+                      improve.
+                    </p>
+                  </div>
+                  <button class="body3 tag-button">Feature</button>
+                  <div class="roadmap-listing__bottom">
+                    <button class="upvoteBtn">
+                      <svg
+                        width="10"
+                        height="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6l4-4 4 4"
+                          stroke="#4661E6"
+                          stroke-width="2"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span class="upvoteCount">28</span>
+                      <span class="visuallyhidden"> upvote post </span>
+                    </button>
+                    <a
+                      href="#"
+                      aria-label="view comments"
+                      class="feedback-listing__comments"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="18"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+                          fill="#CDD2EE"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+
+                      <p class="body1 commentsCounter">1</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="roadmap-list-container in-progress"
+            id="in-progress"
+            data-expander-target
+          >
+            <div class="roadmap-list-container__top">
+              <h2>In-Progress (3)</h2>
+              <p>Currently being developed</p>
+            </div>
+            <ul class="roadmap-listing">
+              <li class="roadmap-listing__item">
+                <div class="roadmap-listing__container">
+                  <p class="roadmap-listing__category body1">In Progress</p>
+                  <a class="roadmap-listing__link" href="">
+                    <h3 class="roadmap-listing__title">
+                      One-click portfolio generation
+                    </h3></a
+                  >
+
+                  <div class="roadmap-listing__desc">
+                    <p>
+                      Add ability to create professional looking portfolio from
+                      profile.
+                    </p>
+                  </div>
+                  <button class="body3 tag-button">Feature</button>
+                  <div class="roadmap-listing__bottom">
+                    <button class="upvoteBtn">
+                      <svg
+                        width="10"
+                        height="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6l4-4 4 4"
+                          stroke="#4661E6"
+                          stroke-width="2"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span class="upvoteCount">62</span>
+                      <span class="visuallyhidden"> upvote post </span>
+                    </button>
+                    <a
+                      href="#"
+                      aria-label="view comments"
+                      class="feedback-listing__comments"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="18"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+                          fill="#CDD2EE"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+
+                      <p class="body1 commentsCounter">1</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="roadmap-listing__item">
+                <div class="roadmap-listing__container">
+                  <p class="roadmap-listing__category body1">In Progress</p>
+                  <a class="roadmap-listing__link" href="">
+                    <h3 class="roadmap-listing__title">
+                      Bookmark challenges
+                    </h3></a
+                  >
+
+                  <div class="roadmap-listing__desc">
+                    <p>Be able to bookmark challenges to take later on.</p>
+                  </div>
+                  <button class="body3 tag-button">Feature</button>
+                  <div class="roadmap-listing__bottom">
+                    <button class="upvoteBtn">
+                      <svg
+                        width="10"
+                        height="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6l4-4 4 4"
+                          stroke="#4661E6"
+                          stroke-width="2"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span class="upvoteCount">31</span>
+                      <span class="visuallyhidden"> upvote post </span>
+                    </button>
+                    <a
+                      href="#"
+                      aria-label="view comments"
+                      class="feedback-listing__comments"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="18"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+                          fill="#CDD2EE"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+
+                      <p class="body1 commentsCounter">1</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="roadmap-listing__item">
+                <div class="roadmap-listing__container">
+                  <p class="roadmap-listing__category body1">In Progress</p>
+                  <a href="" class="roadmap-listing__link">
+                    <h3 class="roadmap-listing__title">
+                      Animated solution screenshots
+                    </h3></a
+                  >
+
+                  <div class="roadmap-listing__desc">
+                    <p>
+                      Screenshots of solutions with animations don’t display
+                      content.
+                    </p>
+                  </div>
+                  <button class="body3 tag-button">Bug</button>
+                  <div class="roadmap-listing__bottom">
+                    <button class="upvoteBtn">
+                      <svg
+                        width="10"
+                        height="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6l4-4 4 4"
+                          stroke="#4661E6"
+                          stroke-width="2"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span class="upvoteCount">9</span>
+                      <span class="visuallyhidden"> upvote post </span>
+                    </button>
+                    <a
+                      href="#"
+                      aria-label="view comments"
+                      class="feedback-listing__comments"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="18"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+                          fill="#CDD2EE"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+
+                      <p class="body1 commentsCounter">0</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="roadmap-list-container live"
+            id="live"
+            data-expander-target
+          >
+            <div class="roadmap-list-container__top">
+              <h2>Live (1)</h2>
+              <p>Released features</p>
+            </div>
+            <ul class="roadmap-listing">
+              <li class="roadmap-listing__item">
+                <div class="roadmap-listing__container">
+                  <p class="roadmap-listing__category body1">Live</p>
+                  <a class="roadmap-listing__link" href="">
+                    <h3 class="roadmap-listing__title">
+                      Add micro-interactions
+                    </h3></a
+                  >
+
+                  <div class="roadmap-listing__desc">
+                    <p>Small animations at specific points can add delight.</p>
+                  </div>
+                  <button class="body3 tag-button">Enhancement</button>
+                  <div class="roadmap-listing__bottom">
+                    <button class="upvoteBtn">
+                      <svg
+                        width="10"
+                        height="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6l4-4 4 4"
+                          stroke="#4661E6"
+                          stroke-width="2"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span class="upvoteCount">71</span>
+                      <span class="visuallyhidden"> upvote post </span>
+                    </button>
+                    <a
+                      href="#"
+                      aria-label="view comments"
+                      class="feedback-listing__comments"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="18"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.62 16H1.346l.902-.91c.486-.491.79-1.13.872-1.823C1.036 11.887 0 9.89 0 7.794 0 3.928 3.52 0 9.03 0 14.87 0 18 3.615 18 7.455c0 3.866-3.164 7.478-8.97 7.478-1.017 0-2.078-.137-3.025-.388A4.705 4.705 0 012.62 16z"
+                          fill="#CDD2EE"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+
+                      <p class="body1 commentsCounter">2</p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
       <script type="module" src="./../script-data-expanders.js"></script>
       <script type="module" src="./../script-goback.js"></script>
     </div>

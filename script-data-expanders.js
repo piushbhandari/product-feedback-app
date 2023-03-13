@@ -7,7 +7,9 @@ dataTogglers.forEach((toggle) => {
     const btnAttribute = currentBtn.getAttribute("data-expander-toggle");
     const targetElement = document.getElementById(btnAttribute);
 
+   
     if (!currentBtn.classList.contains("active")) {
+      closeOthers(dataTogglers)
       currentBtn.classList.add("active");
       targetElement.classList.add("active");
     } else {
@@ -17,6 +19,16 @@ dataTogglers.forEach((toggle) => {
   });
 });
 
+function closeOthers(togglers){
+  togglers.forEach(toggle =>{
+    const currentBtn = toggle;
+    const btnAttribute= currentBtn.getAttribute("data-expander-toggle");
+    const targetElement = document.getElementById(btnAttribute);
+    currentBtn.classList.remove('active')
+    targetElement.classList.remove('active')
+
+  })
+}
 const hidePageListerBtn = document.querySelector(".hidePageLister");
 
 hidePageListerBtn.addEventListener("click", (e) => {
