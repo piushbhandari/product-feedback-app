@@ -29,6 +29,9 @@
   .main {
     width: 100%;
   }
+  .roadmap-container {
+    padding: 5.6rem 0 9.5rem 0;
+  }
 }
 @media all and (max-width: 690px) {
   .page-container {
@@ -111,5 +114,14 @@
   }
   .feedback-listing__comments {
     justify-content: flex-end;
+  }
+  .roadmap-container {
+    padding: 0 0 9.8rem 0;
+  }
+  .roadmap-container .container {
+    padding: 0;
+  }
+  .roadmap-header__wrapper {
+    border-radius: 0;
   }
 }
